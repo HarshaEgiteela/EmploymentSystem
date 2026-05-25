@@ -42,10 +42,10 @@ function EmployeeForm() {
 
     try {
       if (isEdit) {
-        await axios.put(`http://https://employmentsystem.onrender.com/emp/update/${id}`, empDetails);
+        await axios.put(`https://employmentsystem.onrender.com/emp/update/${id}`, empDetails);
         toast.success("Details Updated Successfully");
       } else {
-        await axios.post("http://https://employmentsystem.onrender.com/emp/add", empDetails);
+        await axios.post("https://employmentsystem.onrender.com/emp/add", empDetails);
         toast.success("Details Sent Successfully");
       }
       navigate("/");
