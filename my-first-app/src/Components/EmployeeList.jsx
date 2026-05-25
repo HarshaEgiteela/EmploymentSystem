@@ -9,7 +9,7 @@ function EmployeeList() {
 
   async function getALLUsers() {
     try {
-      const response = await axios.get("http://https://employmentsystem.onrender.com/emp/allusers");
+      const response = await axios.get("https://employmentsystem.onrender.com/emp/allusers");
       setUsers(response.data);
     } catch (error) {
       toast.error("Failed to fetch employees list");
@@ -21,7 +21,7 @@ function EmployeeList() {
       return;
     }
     try {
-      await axios.delete(`http://https://employmentsystem.onrender.com/emp/delete/${id}`);
+      await axios.delete(`https://employmentsystem.onrender.com/emp/delete/${id}`);
       toast.success("Employee deleted successfully");
       getALLUsers();
     } catch (error) {

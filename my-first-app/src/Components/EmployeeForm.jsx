@@ -14,7 +14,7 @@ function EmployeeForm() {
 
   useEffect(() => {
     if (isEdit) {
-      axios.get(`http://https://employmentsystem.onrender.com/emp/get/${id}`)
+      axios.get(`https://employmentsystem.onrender.com/emp/get/${id}`)
         .then(response => {
           if (response.data) {
             setName(response.data.name);
